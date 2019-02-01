@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box model basics</title>
+    <style>
+            body {
+                margin: 0;
+            }
+        p, h1, ul {
+            border: 1px solid firebrick;
+        }
+        p {
+            width: 400px;
+            box-sizing:border-box;
+            padding: 50px;
+            margin: 25px;
+        }
+        h1 {
+            border: 10px solid green;
+            width: 200px;
+            margin: -20px;
+        }
+        
+        ul {
+            margin: 200px 50px 5px 300px;
+        }
+        </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, incidunt. Lorem ipsum,
+         dolor sit amet consectetur adipisicing elit. Illum eum aspernatur voluptatibus excepturi cum vel non corporis,
+          libero nisi adipisci. </p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+</body>
+</html>
+
