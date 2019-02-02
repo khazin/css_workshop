@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic selector</title>
+</head>
+<body>
+    <ul>
+        <li>A</li>
+        <li>S</li>
+        <li>K</li>
+        <ol>
+            <li>K</li>
+            <li>c</li>
+            <li>d</li>
+        </ol>
+        <li class="className">A</li>
+        <li>S</li>
+        <li>K</li>
+    </ul>
+    <style>
+    ul > li {color: aquamarine;}
+    ul li {color: slateblue;}
+    li.className + li { color: salmon;}
+    li.className ~ li { color: violet;}
+    </style>
+</body>
+</html>
