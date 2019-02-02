@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>positioning</title>
+    <style>
+.box {
+    border: 1px solid firebrick;
+    background-color: gray;
+    margin: 12px;
+    height: 50px;
+}
+.box:nth-child(1) {
+    position: relative;
+   
+}
+.box:nth-child(2) {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+   
+}
+.box:nth-child(4){
+    width: 500px;
+    height: 500px;
+}
+.nest-box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+</style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box">
+        <div class="nest-box"></div>
+    </div>
+</body>
+
+</html>
